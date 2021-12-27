@@ -7,3 +7,4 @@ export * from './Hotel/Hotel';
 export * from './Gallery/Gallery';
 export * from './ButtonInline/ButtonInline';
 export * from './Overview/Overview';
+export * from './Description/Description';
