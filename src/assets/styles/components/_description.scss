@@ -6,11 +6,6 @@
     margin-right: 4.5rem;
 }
 
-.user-reviews {
-    background-color: var(--color-white);
-    flex: 1;
-}
-
 .paragraph {
     display: inline-block;
     &:not(:last-of-type){
@@ -55,14 +50,24 @@
     }
 
     &__photo {
+        position: relative;
+        z-index: 10;
         box-sizing: content-box;
         height: 4rem;
         width: 4rem;
         border-radius: 50%;
         border: 0.3rem solid var(--color-white);
+        transition: all 0.2s ease-in;
 
         &:not(:last-child){
             margin-right: -1.6rem;
+        }
+
+        &:hover {
+            transform: scale(1.6) translateY(-2rem);
+            border-color: var(--color-primary);
+            border-radius: 50%;
+            z-index: 20;
         }
     }
 }

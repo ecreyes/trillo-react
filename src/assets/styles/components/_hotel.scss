@@ -1,14 +1,63 @@
 .hotel-view {
     flex: 1;
-    background-color: var(--color-white);
     // TESTING
     min-height: 80rem;
 }
 
 .detail {
-    background-color: var(--color-grey-light-1);
     font-size: 1.4rem;
     display:flex;
     padding: 4.5rem;
     border-bottom: var(--line);
+}
+
+.user-reviews {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.review {
+    background-color: var(--color-white);
+    padding: 3rem;
+    margin-bottom: 4rem;
+    &__text {
+        margin-bottom: 2rem;
+    }
+
+    &__user {
+        display: flex;
+        align-items: center;
+    }
+
+    &__photo {
+        height: 4.5rem;
+        width: 4.5rem;
+        border-radius: 50%;
+        margin-right: 1.6rem;
+    }
+
+    &__user-box {
+        margin-right: auto;
+    }
+
+    &__user-name {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: var(--color-grey-dark-2);
+        text-transform: uppercase;
+        margin-bottom: 0.6rem;
+    }
+    
+    &__user-date {
+        font-size: 1rem;
+    }
+
+    &__rating {
+        color: var(--color-primary);
+        font-size: 2rem;
+        font-weight: 300;
+    }
 }
