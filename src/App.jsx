@@ -1,12 +1,15 @@
 import React from 'react';
-import { Header } from './components';
+import { Header, SideBar } from './components';
 
 const App = () => {
-  return(
+  return (
     <div className='container'>
       <Header></Header>
       <div className='content'>
-        content
+        <SideBar/>
+        <main className='hotel-view'>
+          hotel view
+        </main>
       </div>
     </div>
   )

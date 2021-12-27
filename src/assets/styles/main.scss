@@ -1,5 +1,6 @@
 // abstracts
 @import './abstracts/variables';
+@import './abstracts/utilities';
 // base
 @import './base/base';
 
@@ -8,6 +9,7 @@
 @import './components/logo';
 @import './components/usernav';
 @import './components/searchbar';
+@import './components/sidebar';
 // layout
 
 // pages
