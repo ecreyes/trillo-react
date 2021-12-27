@@ -4,3 +4,6 @@ export * from './UserNav/UserNav';
 export * from './Searchbar/SearchBar';
 export * from './SideBar/SideBar';
 export * from './Hotel/Hotel';
+export * from './Gallery/Gallery';
+export * from './ButtonInline/ButtonInline';
+export * from './Overview/Overview';

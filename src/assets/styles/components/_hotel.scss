@@ -5,91 +5,79 @@
     min-height: 80rem;
 }
 
-.gallery {
-    display: flex;
+.detail {
+    background-color: var(--color-grey-light-1);
+    font-size: 1.4rem;
+    display:flex;
+    padding: 4.5rem;
+    border-bottom: var(--line);
+}
 
-    &__photo {
-        width: 100%;
-        display: block;
+.description {
+    background-color:var(--color-white);
+    box-shadow: var(--shadow-light);
+    padding: 3rem;
+    flex: 0 0 60%;
+    margin-right: 4.5rem;
+}
+
+.user-reviews {
+    background-color: var(--color-white);
+    flex: 1;
+}
+
+.paragraph {
+    display: inline-block;
+    &:not(:last-of-type){
+        margin-bottom: 2rem;
     }
 }
 
-.overview {
+
+.list {
+    list-style: none;
+    margin: 3rem 0;
+    padding: 3rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    border-top: var(--line);
+    border-bottom: var(--line);
+    &__item {
+        flex: 0 0 50%;
+    }
+
+    &__item::before {
+        content:'';
+        height: 0.7rem;
+        width: 0.7rem;
+        display: inline-block;
+        margin-right: 0.7rem;
+        background-color: var(--color-primary)
+    }
+}
+
+.recommend {
+    font-size: 1.3rem;
+    color: var(--color-grey-dark-3);
     display: flex;
     align-items: center;
-    border-bottom: var(--line);
-
-
-    &__heading {
-        padding: 1.5rem 3rem;
-        text-transform: uppercase;
-        font-weight: 300;
-        font-size: 2.3rem;
-        letter-spacing: 0.1rem;
-    }
-
-    &__stars {
+    &__count {
         margin-right: auto;
+    }
+
+    &__friends {
         display: flex;
     }
 
-    &__icon-star {
-        height: 1.5rem;
-        width: 1.5rem;
-        fill: var(--color-primary);
+    &__photo {
+        box-sizing: content-box;
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+        border: 0.3rem solid var(--color-white);
 
-        &:not(:last-child) {
-            margin-right: 0.3rem;
+        &:not(:last-child){
+            margin-right: -1.6rem;
         }
-    }
-
-    &__location {
-        display: flex;
-        align-items: center;
-        margin-right: 2rem;
-        cursor: pointer;
-    }
-
-    &__icon-location {
-        height: 1.5rem;
-        width: 1.5rem;
-        fill: var(--color-primary);
-        margin-right: 0.5rem;
-    }
-
-    &__rating {
-        background-color: var(--color-primary);
-        align-self: stretch;
-        color: var(--color-white);
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 0 2.25rem;
-    }
-
-    &__rating-average {
-        font-size: 2.25rem;
-        font-weight: 300;
-        margin-bottom: -0.3rem;
-    }
-
-    &__rating-count {
-        font-size: 0.9rem;
-        text-transform: uppercase;
-    }
-}
-
-.btn-inline {
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: var(--color-primary);
-    font-size: 1.2rem;
-    border-bottom: 1px solid currentColor;
-
-    &:hover {
-        color: var(--color-grey-dark-1);
     }
 }

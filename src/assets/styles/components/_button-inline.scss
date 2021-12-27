@@ -1,0 +1,12 @@
+.btn-inline {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--color-primary);
+    font-size: 1.2rem;
+    border-bottom: 1px solid currentColor;
+
+    &:hover {
+        color: var(--color-grey-dark-1);
+    }
+}
