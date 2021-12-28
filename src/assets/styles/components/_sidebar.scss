@@ -10,15 +10,38 @@
     list-style: none;
     font-size: 1.4rem;
     cursor: pointer;
+    margin-top: 3.5rem;
+    @media only screen and (max-width: $bp-medium) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 0;
+    }
 
     &__item {
         position: relative;
-        padding: 1.6rem 3rem;
+        padding: 1.8rem 3rem;
+
         &:not(:last-child){
             margin-bottom: 0.5rem;
+            @media only screen and (max-width: $bp-medium) {
+                margin-bottom: 0;
+            }
         }
         &--active {
             background-color: var(--color-primary); 
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            flex:1;
+            display: flex;
+            justify-content: center;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+            align-self: stretch;
+            padding: 1.8rem 1rem;
+            font-size: 1.2rem;
         }
     }
 
@@ -55,11 +78,22 @@
             color: var(--color-grey-light-1);
         }
 
+        @media only screen and (max-width: $bp-small) {
+            flex-direction: column;
+            align-items: center;
+        }
+
     }
     &__icon {
         width: 1.8rem;
         height: 1.8rem;
         margin-right: 2rem;
+        @media only screen and (max-width: $bp-small) {
+            width: 1.4rem;
+            height: 1.4rem;
+            margin-right: 0;
+            margin-bottom: 0.8rem;
+        }
     }
 }
 
@@ -68,4 +102,9 @@
     font-size: 1.2rem;
     color: var(--color-grey-light-4);
     padding: 0 2rem;
+    margin-bottom: 2.5rem;
+    @media only screen and (max-width: $bp-medium) {
+        display: none;
+        margin-top: 0;
+    }
 }

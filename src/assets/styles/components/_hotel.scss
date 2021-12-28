@@ -9,6 +9,13 @@
     display:flex;
     padding: 4.5rem;
     border-bottom: var(--line);
+    @media only screen and (max-width: $bp-medium) {
+        padding: 2.8rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        flex-direction: column;
+    }
 }
 
 .user-reviews {
@@ -23,6 +30,12 @@
     background-color: var(--color-white);
     padding: 3rem;
     margin-bottom: 4rem;
+    @media only screen and (max-width: $bp-medium) {
+        padding: 2rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+        width: 100%;
+    }
     &__text {
         margin-bottom: 2rem;
     }
@@ -76,6 +89,11 @@
         font-size: 2rem;
         text-transform: uppercase;
         font-weight: 300;
+        @media only screen and (max-width: $bp-smallest) {
+            font-size: 1.6rem;
+            padding: 0 1rem;
+            text-align: center;
+        }
     }
 }
 

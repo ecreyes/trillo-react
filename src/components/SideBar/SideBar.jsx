@@ -4,7 +4,7 @@ import { FaHome, FaPlaneDeparture, FaKey, FaMap } from "react-icons/fa";
 export const SideBar = () => {
     return (
         <nav className='sidebar'>
-            <ul className='side-nav mt-m'>
+            <ul className='side-nav'>
                 <li className="side-nav__item side-nav__item--active">
                     <a href="#/" className="side-nav__link">
                         <FaHome className="side-nav__icon" />
@@ -31,7 +31,7 @@ export const SideBar = () => {
                 </li>
             </ul>
 
-            <div className="legal mb-sm">
+            <div className="legal">
                 &copy; 2017 by trillo. All rights reserved.
             </div>
         </nav>
