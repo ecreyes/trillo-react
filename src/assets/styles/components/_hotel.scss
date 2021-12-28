@@ -61,3 +61,31 @@
         font-weight: 300;
     }
 }
+
+
+.cta {
+    background-color: var(--color-white);
+    min-height: 18.5rem;
+    padding: 3.5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    &__book-now {
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: 300;
+    }
+}
+
+.btn {
+    background: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark) );
+    color: var(--color-white);
+    border: none;
+    text-transform: uppercase;
+    padding: 2rem 7.5rem;
+    border-radius: 4rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}

@@ -24,6 +24,9 @@
     border-bottom: var(--line);
     &__item {
         flex: 0 0 50%;
+        &:not(:last-child) {
+            margin-bottom: 1rem;
+        }
     }
 
     &__item::before {

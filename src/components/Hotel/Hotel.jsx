@@ -39,11 +39,17 @@ export const Hotel = () => {
                             <div className="review__rating">9.3</div>
                         </figcaption>
                     </figure>
-
                     <button className="btn-inline">Show all <span>&rarr;</span></button>
                 </div>
             </div>
-            <div className='cta'>cta</div>
+            <div className='cta'>
+                <h2 className="cta__book-now">
+                    Good news! We have 4 free rooms for your selected dates!
+                </h2>
+                <button className="btn">
+                    <span className="btn__visible">Book now</span>
+                </button>
+            </div>
         </main>
     )
 }
